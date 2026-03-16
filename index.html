@@ -3,91 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Dayellenn Fernanda</title>
+  <title>Portfólio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #6a0dad;
-      color: white;
+      background-color: #ff007f; /* rosa */
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      color: #fff;
     }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
+
+    .materia {
+      margin: 30px 20px;
     }
-    .card {
-      background-color: white;
-      border: 2px solid #6a0dad;
+
+    .materia h2 {
+      color: #ff007f;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ff007f;
+      padding-bottom: 5px;
+    }
+
+    .tarefas {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+    }
+
+    .tarefa {
+      flex: 1;
+      background-color: #111;
+      border: 2px solid #ff007f;
       border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
     }
-    .card:hover {
+
+    .tarefa:hover {
       transform: scale(1.05);
     }
-    .card h2 {
-      color: #6a0dad;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    ul li a {
+
+    .tarefa a {
+      color: #fff;
       text-decoration: none;
-      color: #6a0dad;
       font-weight: bold;
-      transition: color 0.2s ease;
+      transition: color 0.3s;
     }
-    ul li a:hover {
-      color: #4b0082;
+
+    .tarefa a:hover {
+      color: #ff007f;
     }
+
     footer {
+      background-color: #ff007f;
       text-align: center;
-      padding: 1rem;
-      background-color: #6a0dad;
-      color: white;
-      margin-top: 2rem;
+      padding: 10px;
+      color: #fff;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Portfólio Dayellenn Fernanda</h1>
-    <p>Visualize minhas tarefas por categoria</p>
+    <h1>Meu Portfólio</h1>
   </header>
 
-  <main class="container">
-    <div class="card">
-      <h2>JavaScript</h2>
-      <ul>
-        <li><a href="https://github.com/dayday-13/terceirao2026.git" target="_blank"> JavaScript</a></li>
-  
-      </ul>
+  <!-- Mobile -->
+  <div class="materia">
+    <h2>Mobile</h2>
+    <div class="tarefas">
+      <div class="tarefa"><a href="atividades/mobile/tarefa1.html" target="_blank">Tarefa 1</a></div>
+      <div class="tarefa"><a href="atividades/mobile/tarefa2.html" target="_blank">Tarefa 2</a></div>
+      <div class="tarefa"><a href="atividades/mobile/tarefa3.html" target="_blank">Tarefa 3</a></div>
+      <div class="tarefa"><a href="atividades/mobile/tarefa4.html" target="_blank">Tarefa 4</a></div>
+      <div class="tarefa"><a href="atividades/mobile/tarefa5.html" target="_blank">Tarefa 5</a></div>
     </div>
-    
-  </main>
+  </div>
+
+  <!-- Análise -->
+  <div class="materia">
+    <h2>Análise</h2>
+    <div class="tarefas">
+      <div class="tarefa"><a href="https://gamma.app/docs/Startups-de-Ponta-no-Brasil-O-Futuro-e-Agora-2026-7dzz79s8cyj2e4d" target="_blank">Startup</a></div>
+      <div class="tarefa"><a href="atividades/analise/tarefa2.html" target="_blank">Tarefa 2</a></div>
+      <div class="tarefa"><a href="atividades/analise/tarefa3.html" target="_blank">Tarefa 3</a></div>
+      <div class="tarefa"><a href="atividades/analise/tarefa4.html" target="_blank">Tarefa 4</a></div>
+      <div class="tarefa"><a href="atividades/analise/tarefa5.html" target="_blank">Tarefa 5</a></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="materia">
+    <h2>JavaScript</h2>
+    <div class="tarefas">
+      <div class="tarefa"><a href="atividades/javascript/tarefa1.html" target="_blank">Tarefa 1</a></div>
+      <div class="tarefa"><a href="atividades/javascript/tarefa2.html" target="_blank">Tarefa 2</a></div>
+      <div class="tarefa"><a href="atividades/javascript/tarefa3.html" target="_blank">Tarefa 3</a></div>
+      <div class="tarefa"><a href="atividades/javascript/tarefa4.html" target="_blank">Tarefa 4</a></div>
+      <div class="tarefa"><a href="atividades/javascript/tarefa5.html" target="_blank">Tarefa 5</a></div>
+    </div>
+  </div>
+
+  <!-- Python -->
+  <div class="materia">
+    <h2>Python</h2>
+    <div class="tarefas">
+      <div class="tarefa"><a href="atividades/python/tarefa1.html" target="_blank">Tarefa 1</a></div>
+      <div class="tarefa"><a href="atividades/python/tarefa2.html" target="_blank">Tarefa 2</a></div>
+      <div class="tarefa"><a href="atividades/python/tarefa3.html" target="_blank">Tarefa 3</a></div>
+      <div class="tarefa"><a href="atividades/python/tarefa4.html" target="_blank">Tarefa 4</a></div>
+      <div class="tarefa"><a href="atividades/python/tarefa5.html" target="_blank">Tarefa 5</a></div>
+    </div>
+  </div>
+
+  <!-- Back-End -->
+  <div class="materia">
+    <h2>Back-End</h2>
+    <div class="tarefas">
+      <div class="tarefa"><a href="atividades/backend/tarefa1.html" target="_blank">Tarefa 1</a></div>
+      <div class="tarefa"><a href="atividades/backend/tarefa2.html" target="_blank">Tarefa 2</a></div>
+      <div class="tarefa"><a href="atividades/backend/tarefa3.html" target="_blank">Tarefa 3</a></div>
+      <div class="tarefa"><a href="atividades/backend/tarefa4.html" target="_blank">Tarefa 4</a></div>
+      <div class="tarefa"><a href="atividades/backend/tarefa5.html" target="_blank">Tarefa 5</a></div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Dayellenn Fernanda - Portfólio</p>
+    <p>© 2026 - Desenvolvido por Dayellenn</p>
   </footer>
+
+  <script>
+    // Interatividade simples: alerta ao clicar
+    document.querySelectorAll('.tarefa a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        alert(`Abrindo: ${link.textContent}`);
+      });
+    });
+  </script>
 </body>
 </html>
