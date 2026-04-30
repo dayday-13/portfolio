@@ -5,110 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Da DayDay</title>
   <style>
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(135deg, #ffe6f0, #fff);
-      color: #ff3399;
-      margin: 0;
-      padding: 0;
-      animation: fadeIn 2s ease-in-out;
-    }
+  body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #BFEFFF, #fff); /* azul bebê suave */
+  color: #004080; /* azul mais escuro para contraste */
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 2s ease-in-out;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+header {
+  background-color: #ADD8E6; /* azul bebê */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #4682B4; /* azul médio para destaque */
+  animation: pulse 3s infinite;
+}
 
-    header {
-      background-color: #ff99cc;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 5px solid #ff3399;
-      animation: pulse 3s infinite;
-    }
+header h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px #4682B4;
+}
 
-    header h1 {
-      margin: 0;
-      color: #fff;
-      text-shadow: 2px 2px #ff3399;
-    }
+.materia h2 {
+  color: #004080;
+  margin-bottom: 15px;
+  border-bottom: 3px dashed #ADD8E6;
+  padding-bottom: 5px;
+  font-style: italic;
+}
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); color: #fff0f5; }
-      100% { transform: scale(1); }
-    }
+.tarefa {
+  flex: 1;
+  background-color: #E0FFFF; /* azul clarinho */
+  border: 2px solid #ADD8E6;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+}
 
-    .materia {
-      margin: 30px 42px;
-    }
+.tarefa:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 20px #ADD8E6;
+}
 
-    .materia h2 {
-      color: #ff3399;
-      margin-bottom: 15px;
-      border-bottom: 3px dashed #ff99cc;
-      padding-bottom: 5px;
-      font-style: italic;
-    }
+.tarefa a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-    .tarefas {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+.tarefa a:hover {
+  color: #4682B4;
+}
 
-    .tarefa {
-      flex: 1;
-      background-color: #fff0f5;
-      border: 2px solid #ff99cc;
-      border-radius: 15px;
-      text-align: center;
-      padding: 15px;
-      transition: transform 0.4s, box-shadow 0.4s;
-      position: relative;
-    }
+footer {
+  background-color: #ADD8E6;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  color: #004080;
+  font-weight: bold;
+  border-top: 3px solid #4682B4;
+}
 
-    .tarefa:hover {
-      transform: scale(1.1) rotate(-2deg);
-      box-shadow: 0 0 20px #ff99cc;
-    }
+.heart {
+  position: fixed;
+  bottom: 10px;
+  font-size: 24px;
+  color: #4682B4;
+  animation: floatHearts 4s linear infinite;
+}
 
-    .tarefa a {
-      color: #ff3399;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    .tarefa a:hover {
-      color: #ff66b2;
-    }
-
-    footer {
-      background-color: #ff99cc;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      padding: 1%;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      border-top: 3px solid #ff3399;
-    }
-
-    /* Efeito de corações subindo */
-    @keyframes floatHearts {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
-    }
-
-    .heart {
-      position: fixed;
-      bottom: 10px;
-      font-size: 24px;
-      color: #ff3399;
-      animation: floatHearts 4s linear infinite;
-    }
   </style>
 </head>
 <body>
@@ -155,7 +129,7 @@
     <h2>Mobile</h2>
     <div class="tarefas">
       
-      <div class="tarefa"><a href="codigo.png" target="_blank">Expo snack</a></div>
+      <div class="tarefa"><a href="../back end/Captura de tela 2026-04-27 104856.png" target="_blank">Expo snack</a></div>
       <div class="tarefa"><a href="atividades/mobile/tarefa2.html" target="_blank">Pendente</a></div>
       <div class="tarefa"><a href="atividades/mobile/tarefa3.html" target="_blank">Pendente</a></div>
       <div class="tarefa"><a href="atividades/mobile/tarefa4.html" target="_blank">Pendente</a></div>
